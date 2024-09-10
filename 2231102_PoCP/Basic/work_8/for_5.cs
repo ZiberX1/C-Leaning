@@ -1,15 +1,18 @@
 int sum = 0;
-int num = 1;
-string strNum = "";
-for (int i = 1; i <= 13; i++)
+string sumString = "";
+
+for (int i = 1; i <= 49; i += 4)
 {
-    sum += num;
+    sum += i;
 
     if (i == 1)
-        Console.WriteLine(num);
+    {
+        sumString += i;
+        Console.WriteLine(sum);
+    }
     else
-        Console.WriteLine("{0}{1} = {2}", strNum, num, sum);
-
-    strNum += num + " + ";
-    num += 4;
+    {
+        sumString += " + " + i;
+        Console.WriteLine("{0} = {1}", sumString, sum);
+    }
 }
