@@ -18,7 +18,7 @@ for (int i = 0; i < students.GetLength(0); i++)
     for (int j = 0; j < students.GetLength(1); j++)
     {
         Console.Write(students[i, j] + "\t");
-        if (j > 0)
+        if (j > 0) // j = 0 คือชื่อคน
             total += int.Parse(students[i, j]);
     }
 
@@ -34,5 +34,5 @@ for (int i = 0; i < students.GetLength(0); i++)
         grade = 'F';
 
     Console.Write(total + "\t" + grade);
-    Console.WriteLine();
+    Console.WriteLine(); // ขึ้นบรรทัดใหม่
 }

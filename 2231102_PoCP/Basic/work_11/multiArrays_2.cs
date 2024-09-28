@@ -12,18 +12,18 @@ Console.WriteLine("Name\tHeight\tWeight\tStandard\t\tCompare\t\tMessage");
 
 for (int i = 0; i < people.GetLength(0); i++)
 {
-    Console.Write(people[i, 0] + "\t");
+    Console.Write(people[i, 0] + "\t"); // ชื่อ
 
-    int height = int.Parse(people[i, 1]);
-    int weight = int.Parse(people[i, 2]);
+    int height = int.Parse(people[i, 1]); // ส่วนสูง | แปลงเป็นค่า int
+    int weight = int.Parse(people[i, 2]); // น้ำหนัก | แปลงเป็นค่า int
 
     Console.Write(height + "\t");
     Console.Write(weight + "\t");
 
-    int standard = height - 110;
+    int standard = height - 110; // น้ำหนักมาตรฐาน (ส่วนสูง - 110)
     Console.Write("{0} - 110 = {1}\t\t", height, standard);
 
-    int compare = weight - standard;
+    int compare = weight - standard; // น้ำหนักที่ได้ (น้ำหนักตัว - น้ำหนักมาตรฐาน)
     Console.Write(compare + "\t\t");
 
     string message;
@@ -35,5 +35,5 @@ for (int i = 0; i < people.GetLength(0); i++)
         message = "You're fat";
     Console.Write(message);
 
-    Console.WriteLine();
+    Console.WriteLine(); // ขึ้นบรรทัดใหม่
 }
