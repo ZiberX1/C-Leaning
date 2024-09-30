@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #576CBC;
+}
+
+ul.menu {
+    list-style-type: none;
+    background-color: #0B2447;
+    margin: 0;
+    padding: 1em 10% 1em 10%;
+    position: relative;
+    overflow: auto;
+    align-content: center;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    float: left;
+    padding-right: 2em;
+}
+
+ul.menu li a:hover {
+    color: #A5D7E8;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 75em;
+}
+
+main > article {
+    border-radius: 20px;
+    position: relative;
+    margin: 2em 0 2em;
+    padding: 3em 1em;
+    background-color: #fff;
+}
+
+main > article > section {
+    padding: 0 1.5em 0em;
+    margin-bottom: 4.5em;
+}
+
+main > article > section > h3 {
+    margin: 0 0;
+}
+
+main article > section > p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+main > article > section > a > img {
+    border-radius: 20px;
+}
+
+main > article > section > ul > li > a:visited {
+    color: #576CBC;
+}
+
+main > article > section > ul > li > a:hover {
+    color: #19376D;
+}
+
+.img-A {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-L {
+    height: 250px;
+    float: left;
+    margin-right: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mxt-0 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    ul.menu li a {
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .img-L {
+        height: 200px;
+        width: 188px;
+    }
+}
