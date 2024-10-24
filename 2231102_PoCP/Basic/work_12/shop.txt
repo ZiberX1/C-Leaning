@@ -1,0 +1,10 @@
+1;Water;7
+2;Bread;5
+3;Mama;13
+4;Lay;20
+5;Milk;12
+6;Ice;5
+7;Hanami;10
+8;Mentos;5
+9;Oreo;8
+10;Taro;20
